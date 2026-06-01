@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Mi mensaje</title>
+
+<style>
+body{
+     display:flex;
+     justify-content:center;
+     align.items:center;
+     height:100vh;
+     background:pink;
+     font-family:Arial;
+}
+
+.card{
+      background:white;
+      padding:30px;
+      border-radius:20px;
+      text-align:center;
+      width:400px;
+      animation:aparecer 2s;
+}
+
+.heart{
+    font-size:60px;
+    animation:latir 1s infinite;
+
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        tranjsform:translateY(50px);
+    }
+
+    to{
+      opacity:1;
+      tranform:translateY(0);
+    }
+}
+
+@keyframes latir{
+    0%,100%{
+        transform:scale(1);
+     }
+
+     50%{
+         transform:scale(1.2);
+     }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="card">  
+    <h1>Para Ti ❤️ </h1>
+
+    <p>
+        Gracias por hacer mis dias mas felices
+    </p>
+<div class="heart">❤️</div>
+
+
+</div>
+
+</body>
+</html> 
